@@ -1,0 +1,7 @@
+body {
+  background-color: #dfe !important; }
+  body table#recipe {
+    margin-top: 10px;
+    border-color: #4dc !important; }
+    body table#recipe thead th {
+      background-color: #4dc !important; }
