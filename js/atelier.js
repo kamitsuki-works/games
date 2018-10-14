@@ -68,6 +68,20 @@
       },
       {
         category: "item",
+        item: "クロース",
+        base1: "クモの糸 x 1",
+        base2: "絹糸 x 1",
+        base3: "端切れ x 1"
+      },
+      {
+        category: "item",
+        item: "アイアンインゴット",
+        base1: "蛍石 x 1",
+        base2: "鉄鉱石 x 1",
+        base3: "重鉱石 x 1"
+      },
+      {
+        category: "item",
         item: "中和剤・青",
         base1: "ゼラチン x 2",
         base2: "魚のウロコ x 1"
@@ -152,6 +166,13 @@
         base1: "トネリコの枝 x 3",
         base2: "中和剤・赤 x 1",
         base3: "黒曜石 x 1"
+      },
+      {
+        category: "item",
+        item: "レザー",
+        base1: "もこもこの毛皮 x 1",
+        base2: "獣の皮 x 1",
+        base3: "ふわふわの羽毛 x 1"
       },
       {
         category: "item",
@@ -795,6 +816,20 @@
         base1: "闇百合の雫 x 1",
         base2: "蛍石 x 5",
         base3: "女王蜘蛛の糸 x 3"
+      },
+      {
+        category: "armor",
+        item: "ロロナのペンダント",
+        base1: "鍛冶ハンマー x 1",
+        base2: "ロロナの宝石 x 4",
+        base3: "ロロナのフレーム x 4"
+      },
+      {
+        category: "armor",
+        item: "マリーのペンダント",
+        base1: "鍛冶ハンマー x 1",
+        base2: "マリーの宝石 x 4",
+        base3: "マリーのフレーム x 4"
       },
       {
         category: "food",
