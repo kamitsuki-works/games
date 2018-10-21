@@ -16,6 +16,13 @@
       },
       {
         category: "item",
+        item: "オータムトレントの結晶",
+        base1: "トネリコの枝 x 3",
+        base2: "赤いトレントの葉 x 2",
+        base3: "赤いトレントの根 x 1"
+      },
+      {
+        category: "item",
         item: "どくうに",
         base1: "ウィローの枝 x 1",
         base2: "うに x 1",
@@ -47,6 +54,13 @@
         item: "うに袋",
         base1: "うに x 2",
         base2: "端切れ x 1"
+      },
+      {
+        category: "item",
+        item: "オータムトレントの繊維",
+        base1: "トネリコの枝 x 3",
+        base2: "赤いトレントの葉 x 2",
+        base3: "赤いトレントの枝 x 1"
       },
       {
         category: "item",
@@ -103,6 +117,13 @@
         item: "中和剤・緑",
         base1: "ゼラチン x 2",
         base2: "フレッシュリーフ x 1"
+      },
+      {
+        category: "item",
+        item: "オータム染料",
+        base1: "トネリコの枝 x 3",
+        base2: "赤いトレントの葉 x 2",
+        base3: "赤いトレントの根 x 1"
       },
       {
         category: "item",
@@ -179,6 +200,13 @@
         item: "ランバー",
         base1: "トネリコの枝 x 2",
         base2: "ガマの油 x 1"
+      },
+      {
+        category: "item",
+        item: "オータムトレントの角材",
+        base1: "トネリコの枝 x 3",
+        base2: "赤いトレントの根 x 2",
+        base3: "赤いトレントの根 x 1"
       },
       {
         category: "item",
@@ -500,6 +528,13 @@
       },
       {
         category: "armor",
+        item: "オータムシールド",
+        base1: "ジャム x 1",
+        base2: "オータムトレントの繊維 x 4",
+        base3: "オータム染料 x 3"
+      },
+      {
+        category: "armor",
         item: "オルビュースの盾",
         base1: "鉄鉱石 x 2",
         base2: "水晶 x 5",
@@ -538,6 +573,13 @@
         item: "狩人の羽飾り",
         base1: "ふわふわの羽毛 x 4",
         base2: "絹糸 x 2"
+      },
+      {
+        category: "armor",
+        item: "オータムフード",
+        base1: "ジャム x 1",
+        base2: "オータムトレントの角材 x 4",
+        base3: "オータム染料 x 3"
       },
       {
         category: "armor",
@@ -606,6 +648,13 @@
         base1: "ガマの油 x 1",
         base2: "端切れ x 1",
         base3: "絹糸 x 1"
+      },
+      {
+        category: "armor",
+        item: "オータムウェア",
+        base1: "ジャム x 1",
+        base2: "オータムトレントの結晶 x 4",
+        base3: "オータム染料 x 3"
       },
       {
         category: "armor",
@@ -752,6 +801,13 @@
         base1: "獣の皮 x 1",
         base2: "クロース x 1",
         base3: "バラの蔓 x 2"
+      },
+      {
+        category: "armor",
+        item: "秋の妖精人形",
+        base1: "ジャム x 2",
+        base2: "オータムトレントの角材 x 2",
+        base3: "オータム染料 x 1"
       },
       {
         category: "armor",
