@@ -19,9 +19,12 @@ $ ->
 					(r.base3? and r.base3.indexOf(search.word) > -1) or 
 					(r.base4? and r.base4.indexOf(search.word) > -1)
 
-	$.getJSON jsonDataUrl,(json)->
+	successFunc = (json) ->
 		console.log json
 		table.recipe = json.recipe
 		$('#msg').text json.msg
+	
+	$.getJSON jsonDataUrl,(json)->
+		successFunc json
 
 	return
