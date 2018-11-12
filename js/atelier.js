@@ -1,7 +1,7 @@
 (function() {
   $(function() {
     var jsonDataUrl, search, table;
-    jsonDataUrl = "./data/recipe.json";
+    jsonDataUrl = "../data/recipe.json";
     search = new Vue({
       el: '#search',
       data: {

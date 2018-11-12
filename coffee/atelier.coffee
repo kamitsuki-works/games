@@ -1,5 +1,5 @@
 $ ->
-	jsonDataUrl = "./data/recipe.json";
+	jsonDataUrl = "../data/recipe.json";
 
 	search = new Vue
 		el: '#search'
