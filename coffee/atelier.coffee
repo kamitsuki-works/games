@@ -1,5 +1,5 @@
 $ ->
-	jsonDataUrl = "../data/recipe.json";
+	jsonUri = "../data/recipe.json";
 
 	search = new Vue
 		el: '#search'
@@ -19,11 +19,8 @@ $ ->
 					(r.base3? and r.base3.indexOf(search.word) > -1) or 
 					(r.base4? and r.base4.indexOf(search.word) > -1)
 
-	successFunc = (json) ->
+	$.getJSON jsonUri,(json)->
 		table.recipes = json.recipe
 		$('#msg').text json.msg
-	
-	$.getJSON jsonDataUrl,(json)->
-		successFunc json
 
 	return

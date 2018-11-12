@@ -1,7 +1,7 @@
 (function() {
   $(function() {
-    var jsonDataUrl, search, successFunc, table;
-    jsonDataUrl = "../data/recipe.json";
+    var jsonUri, search, table;
+    jsonUri = "../data/recipe.json";
     search = new Vue({
       el: '#search',
       data: {
@@ -21,12 +21,9 @@
         }
       }
     });
-    successFunc = function(json) {
+    $.getJSON(jsonUri, function(json) {
       table.recipes = json.recipe;
       return $('#msg').text(json.msg);
-    };
-    $.getJSON(jsonDataUrl, function(json) {
-      return successFunc(json);
     });
   });
 
