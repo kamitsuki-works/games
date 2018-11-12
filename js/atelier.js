@@ -22,6 +22,7 @@
       }
     });
     $.getJSON(jsonDataUrl, function(json) {
+      console.log(json);
       table.recipe = json.recipe;
       return $('#msg').text(json.msg);
     });

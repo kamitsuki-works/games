@@ -20,6 +20,7 @@ $ ->
 					(r.base4? and r.base4.indexOf(search.word) > -1)
 
 	$.getJSON jsonDataUrl,(json)->
+		console.log json
 		table.recipe = json.recipe
 		$('#msg').text json.msg
 
