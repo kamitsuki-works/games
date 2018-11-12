@@ -20,8 +20,7 @@ $ ->
 					(r.base4? and r.base4.indexOf(search.word) > -1)
 
 	successFunc = (json) ->
-		console.log json
-		table.recipe = json.recipe
+		table.recipes = json.recipe
 		$('#msg').text json.msg
 	
 	$.getJSON jsonDataUrl,(json)->
