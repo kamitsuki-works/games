@@ -41,7 +41,7 @@
           var j = 0;
           while (j < queue.length) {
             var now = queue[j];
-            var next = nextMap[now];
+            var next = this.nextMap[now];
             for(var i in next) {
               if (map[next[i]] && map[next[i]].length > 0) {
                 continue;
