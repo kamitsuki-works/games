@@ -1,0 +1,58 @@
+body {
+  background: linear-gradient(#00062d, #040c67) fixed !important;
+  color: #fff !important;
+}
+body .container.p5s .header .content{
+  color: #fff !important;
+}
+body .container.p5s .ui.selection.dropdown{
+  padding: 0 6px;
+}
+
+body table#recipe {
+  margin-top: 10px;
+  border: 3px #fff solid !important;
+}
+body table#recipe th,body table#recipe td {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+.ui.button.p5s {
+ color:#fff;
+ background-color: #f00 !important;
+}
+.ui.button.p5s i{
+ opacity: 0 !important;
+}
+.ui.button.p5s:focus {
+ background: -moz-radial-gradient(circle,#000 10px,#f00 11px,#f00 20px,#000 21px,#000 30px,#f00 31px,#f00 40px,#000 41px,#000 50px,#f00 51px);
+ background: -webkit-radial-gradient(circle,#000 10px,#f00 11px,#f00 20px,#000 21px,#000 30px,#f00 31px,#f00 40px,#000 41px,#000 50px,#f00 51px);
+ background: -ms-radial-gradient(circle,#000 10px,#f00 11px,#f00 20px,#000 21px,#000 30px,#f00 31px,#f00 40px,#000 41px,#000 50px,#f00 51px);
+}
+.ui.button.p5s:focus i{
+ opacity: 1 !important;
+}
+.ui.segment{
+ color: #fff;
+background-color: #000;
+ margin: 2em 0.5em !important;
+}
+.ui.segment:before{
+    -webkit-transform: rotate(-0.3deg);
+    transform: rotate(-0.3deg);
+    margin: -.5em -0.5em;
+    top: 0;
+    z-index: -2;
+    background-color: #fff;
+    visibility: visible;
+    content: '';
+    display: block;
+    left: 0;
+    width: calc( 100% + 1em);
+    height: calc( 100% + 1em);
+    position: absolute;
+    border: 1px solid rgba(34,36,38,.15);
+    -webkit-box-shadow: '';
+    box-shadow: '';
+
+}

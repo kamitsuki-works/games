@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <title>ペルソナ5スクランブル 合成レシピブック</title>
+  <meta charset="utf-8" />
+  <meta name="keywords" Content="p5s,上月弦夜," />
+  <meta name="description" Content="P5Sの合成レシピ検索用サイト" />
+  <meta name="author" content="Genya Kamitsuki" />
+  <meta name="copyright" content="Genya Kamitsuki" />
+  <meta name="robots" content="index,nofollow" />
+  <link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/p5s.css">
+</head>
+<body>
+
+<div class="ui container p5s">
+ <h1></h1>
+ <div class="ui two column stackable grid">
+  <h2 class="ui header nine wide column">
+   <div class="content">ペルソナ5スクランブル 合体レシピ</div>
+  </h2>
+  <div class="right aligned seven wide column">
+   <div class="ui search right">
+
+    <div class="ui icon input" id="search">
+     <input class="prompt" type="text" placeholder="Search" v-model="word" list="datalist" />
+     <datalist id="datalist">
+       <option v-for="name in sortList">{{name}}</option>
+     </datalist>
+     <i class="search icon"></i>
+    </div>
+    <a class="ui circular twitter icon button" target="_twitter" href="https://twitter.com/share?url=https%3A%2F%2Fkamitsuki-works.github.io%2Fgames%2Fp5s&related=&hashtags=P5Sレシピ%2C&text=ペルソナ5スクランブル 合体レシピブック">
+     <i class="twitter icon"></i>
+    </a>
+   </div>
+  </div>
+ </div>
+
+
+
+ <div class="ui container" id="extends">
+  <div><label>力の継承検索</label></div>
+  <div>
+   <select class="ui dropdown selection" v-model="from">
+    <option value="">Base</option>
+    <option v-for="d in dataList" :value="d.id">{{d.name}}</option>
+   </select>
+ 　TO　
+   <select class="ui dropdown selection" v-model="to">
+    <option value="">Target</option>
+    <option v-for="d in dataList" :value="d.id">{{d.name}}</option>
+   </select>
+ 　&nbsp;<button class="ui button p5s" @click="extendSearch"><i class="gem icon"></i>検索</button>
+  </div>
+  <div class="ui segment" v-if="result.length > 0">
+   <p>{{result}}</p>
+  </div>
+ </div>
+
+
+</div>
+
+
+
+
+
+<div class="ui container">
+ <table class="ui unstackable table" id="recipe">
+  <thead>
+   <tr>
+    <th class="left aligned">名前</th>
+    <th>獲得</th>
+    <th>素材1</th>
+    <th>素材2</th>
+    <th>素材3</th>
+    <th>素材4</th>
+    <th>素材5</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr v-for="p in filterRecipe">
+    <td><strong>{{ p.name }}</strong></td>
+    <td>{{ p.drop }}</td>
+    <td>{{ p.base1 }}</td>
+    <td>{{ p.base2 }}</td>
+    <td>{{ p.base3 }}</td>
+    <td>{{ p.base4 }}</td>
+    <td>{{ p.base5 }}</td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+
+<h2></h2>
+<div class="ui center aligned container">
+Copyright© <a href="https://twitter.com/kamitsuki_genya" target="twitter">Genya Kamitsuki</a> All Rights Reserved. 
+</div>
+<h1></h1>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/semantic.min.js"></script>
+<script src="../js/vue.js"></script>
+<script src="../js/p5s.js"></script>
+</body>
